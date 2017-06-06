@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% if !@posts.blank? %>
+      <% for post in @posts %>
+        <h1>Post Name: <%= post.name %></h1>
+        <h1>Post Content: <%= post.content %></h1>
+      <% end %>
+    <% else %>
+      <h1>No post yet</h1>
+    <% end %>
+  </body>
+</html>
